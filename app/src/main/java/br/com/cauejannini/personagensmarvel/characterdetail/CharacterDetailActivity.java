@@ -1,4 +1,4 @@
-package br.com.cauejannini.personagensmarvel;
+package br.com.cauejannini.personagensmarvel.characterdetail;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,8 +8,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
+import br.com.cauejannini.personagensmarvel.R;
 import br.com.cauejannini.personagensmarvel.databinding.ActivityCharacterDetailBinding;
-import br.com.cauejannini.personagensmarvel.models.Character;
+import br.com.cauejannini.personagensmarvel.commons.models.Character;
 
 public class CharacterDetailActivity extends AppCompatActivity {
 

@@ -1,6 +1,6 @@
-package br.com.cauejannini.personagensmarvel.integration;
+package br.com.cauejannini.personagensmarvel.commons.integration;
 
-import br.com.cauejannini.personagensmarvel.models.CharacterDataWrapper;
+import br.com.cauejannini.personagensmarvel.commons.models.CharacterDataWrapper;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;

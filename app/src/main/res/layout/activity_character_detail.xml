@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".CharacterDetailActivity">
+    tools:context=".characterdetail.CharacterDetailActivity">
 
     <data>
         <variable
             name="characterVM"
-            type="br.com.cauejannini.personagensmarvel.CharacterViewModel"/>
+            type="br.com.cauejannini.personagensmarvel.characterdetail.CharacterViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

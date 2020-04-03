@@ -1,4 +1,4 @@
-package br.com.cauejannini.personagensmarvel.models;
+package br.com.cauejannini.personagensmarvel.commons.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

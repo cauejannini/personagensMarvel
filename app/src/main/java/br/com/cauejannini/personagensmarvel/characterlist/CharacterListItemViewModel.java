@@ -1,12 +1,13 @@
-package br.com.cauejannini.personagensmarvel;
+package br.com.cauejannini.personagensmarvel.characterlist;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import br.com.cauejannini.personagensmarvel.integration.MarvelRepository;
-import br.com.cauejannini.personagensmarvel.models.Character;
+import br.com.cauejannini.personagensmarvel.commons.MyLog;
+import br.com.cauejannini.personagensmarvel.commons.integration.MarvelRepository;
+import br.com.cauejannini.personagensmarvel.commons.models.Character;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;

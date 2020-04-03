@@ -1,18 +1,10 @@
-package br.com.cauejannini.personagensmarvel;
-
-import android.content.Context;
-import android.widget.Toast;
+package br.com.cauejannini.personagensmarvel.commons;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Calendar;
 
 public class Utils {
-
-    public static void showToast(Context context, String text) {
-        if (context != null)
-            Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
-    }
 
     public static String currentTimestamp() {
         return String.valueOf(Calendar.getInstance().getTimeInMillis());

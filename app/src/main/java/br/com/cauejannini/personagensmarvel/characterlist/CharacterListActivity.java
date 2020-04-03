@@ -1,4 +1,4 @@
-package br.com.cauejannini.personagensmarvel;
+package br.com.cauejannini.personagensmarvel.characterlist;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +12,12 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import br.com.cauejannini.personagensmarvel.databinding.ActivityMainBinding;
-import br.com.cauejannini.personagensmarvel.models.Character;
+import br.com.cauejannini.personagensmarvel.R;
+import br.com.cauejannini.personagensmarvel.characterdetail.CharacterDetailActivity;
+import br.com.cauejannini.personagensmarvel.commons.models.Character;
+import br.com.cauejannini.personagensmarvel.databinding.ActivityCharacterListBinding;
 
-public class MainActivity extends AppCompatActivity implements CharactersAdapter.InteractionListener {
+public class CharacterListActivity extends AppCompatActivity implements CharactersAdapter.InteractionListener {
 
     SwipeRefreshLayout srl;
     ProgressBar progressBar;
@@ -35,8 +37,8 @@ public class MainActivity extends AppCompatActivity implements CharactersAdapter
         characterListVM = new ViewModelProvider(this).get(CharacterListViewModel.class);
         characterListVM.init();
 
-        ActivityMainBinding activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        activityMainBinding.setCharacterListVM(characterListVM);
+        ActivityCharacterListBinding activityCharacterListBinding = DataBindingUtil.setContentView(this, R.layout.activity_character_list);
+        activityCharacterListBinding.setCharacterListVM(characterListVM);
 
         // Binding
         progressBar = findViewById(R.id.progressBar);

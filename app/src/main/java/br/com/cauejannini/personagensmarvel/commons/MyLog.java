@@ -1,6 +1,8 @@
-package br.com.cauejannini.personagensmarvel;
+package br.com.cauejannini.personagensmarvel.commons;
 
 import android.util.Log;
+
+import br.com.cauejannini.personagensmarvel.BuildConfig;
 
 public class MyLog {
 

@@ -1,4 +1,4 @@
-package br.com.cauejannini.personagensmarvel;
+package br.com.cauejannini.personagensmarvel.characterlist;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +12,8 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-import br.com.cauejannini.personagensmarvel.models.Character;
+import br.com.cauejannini.personagensmarvel.R;
+import br.com.cauejannini.personagensmarvel.commons.models.Character;
 
 public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.CharacterViewHolder> {
 

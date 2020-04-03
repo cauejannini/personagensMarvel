@@ -1,4 +1,4 @@
-package br.com.cauejannini.personagensmarvel.integration;
+package br.com.cauejannini.personagensmarvel.commons.integration;
 
 public class MarvelRepository {
 
@@ -10,7 +10,5 @@ public class MarvelRepository {
         }
         return marvelApi;
     }
-
-
 
 }

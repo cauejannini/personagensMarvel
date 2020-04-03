@@ -1,7 +1,7 @@
-package br.com.cauejannini.personagensmarvel.integration;
+package br.com.cauejannini.personagensmarvel.commons.integration;
 
 import br.com.cauejannini.personagensmarvel.BuildConfig;
-import br.com.cauejannini.personagensmarvel.Utils;
+import br.com.cauejannini.personagensmarvel.commons.Utils;
 import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
