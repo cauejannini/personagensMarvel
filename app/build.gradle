@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+def apiAccessFile = rootProject.file("../api/apiAccess.properties")
+def apiAccessProperties = new Properties()
+apiAccessProperties.load(new FileInputStream(apiAccessFile))
+
 android {
     compileSdkVersion 29
 
@@ -26,7 +30,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         buildTypes.each {
-            it.buildConfigField 'String', 'MarvelPrivateKey', MarvelPrivateKey
+            it.buildConfigField 'String', 'MarvelPrivateKey', apiAccessProperties.MarvelPrivateKey
             it.buildConfigField 'String', 'MarvelPublicKey', '"cd2fefc0d37ccb2e389911cd7e845a77"'
         }
     }
